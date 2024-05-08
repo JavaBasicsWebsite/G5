@@ -201,16 +201,15 @@ i {
 
 .info-wrapper {
   height: 100vh;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .about-info {
-  width: 27ch;
-  animation: typing 1.5s steps(35), blink .5s step-end infinite alternate;
-  white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
   font-family: monospace;
   font-size: 76px; 
   text-align: center;
@@ -218,28 +217,14 @@ i {
 }
 
 .about-info2 {
-  width: 19.7ch;
-  animation: typing 1.5s steps(35), blink .5s step-end infinite alternate;
-  white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
   font-family: monospace;
   font-size: 76px; 
   text-align: center;
   cursor: default;
+  display: flex;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 
 /* -------------------- topics ----------------------*/
 
@@ -258,7 +243,7 @@ main.table {
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
   border-radius: .8rem;
-  overflow: hidden;
+  overflow: overlay;
   margin-top: 40px;
 }
 
@@ -269,8 +254,6 @@ main.table {
   font-size: 18px;
   margin: 1.05rem auto;
   border-radius: .6rem;
-  overflow: auto;
-  overflow: overlay;
 }
 
 .table__header {

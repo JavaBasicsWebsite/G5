@@ -85,16 +85,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-
-
-// --------- Generator-Section -----------
-
-const changeSourceButton = document.getElementById('changeSourceButton');
-    const iframe = document.getElementById('myFrame');
-
-    changeSourceButton.addEventListener('click', function() {
-        const randomNumber = Math.floor(Math.random() * 426505) + 1;
-        const newURL = 'https://nhentai.to/g/' + randomNumber;
-        iframe.src = newURL;
-    });
-      
