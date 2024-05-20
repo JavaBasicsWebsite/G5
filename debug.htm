@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Table Example</title>
+  <style>
+    .main {
+      margin: 50px;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    .table-header {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      word-wrap: break-word;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="table-header">
+      My Responsive Table
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fa-solid fa-circle-info"></i> How is this website different from any other website? The content in this site are specifically the topics in our class at AMACC.</td>
+        </tr>
+        <tr>
+          <td>Regular information</td>
+        </tr>
+        <!-- Additional rows with every other <td> removed -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
