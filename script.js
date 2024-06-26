@@ -85,3 +85,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Show the mobile compatibility message if the device is mobile
+if (isMobile()) {
+  alert("Mobile compatibility is a work in progress.");
+}
