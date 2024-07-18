@@ -198,6 +198,33 @@ a > i {
   overflow: hidden;
 }
 
+.about-info {
+  width: 27ch;
+  animation: typing 1.5s steps(27), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 26px; 
+  text-align: center;
+  cursor: default;
+  margin-top: 40px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
 /* -------------------- topics ----------------------*/
 
 #topic-wrapper {
